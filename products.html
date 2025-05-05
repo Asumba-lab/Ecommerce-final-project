@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse our wide range of tech products at TechZone" />
+  <title>Products - TechZone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">TechZone</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button id="cartBtn">Cart 🛒 (<span id="cart-count">0</span>)</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="products-header">
+      <h1>Our Products</h1>
+      <div class="search-filter">
+        <input type="text" id="searchInput" placeholder="Search products..." />
+        <select id="categoryFilter">
+          <option value="all">All Categories</option>
+          <option value="smartphones">Smartphones</option>
+          <option value="laptops">Laptops</option>
+          <option value="audio">Audio Devices</option>
+          <option value="tablets">Tablets</option>
+          <option value="smartwatches">Smartwatches</option>
+          <option value="gaming">Gaming</option>
+          <option value="cameras">Cameras</option>
+          <option value="smarthome">Smart Home</option>
+          <option value="accessories">Accessories</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="products-grid">
+      <!-- Smartphones -->
+      <article class="product" data-category="smartphones">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500&auto=format&fit=crop&q=60" alt="iPhone 14 Pro" />
+        <h3>iPhone 14 Pro</h3>
+        <p class="price">KSh 189,850</p>
+        <p class="description">Latest iPhone with Dynamic Island and Pro camera system.</p>
+        <button onclick="addToCart('iPhone 14 Pro')">Add to Cart</button>
+      </article>
+
+      <article class="product" data-category="smartphones">
+        <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=500&auto=format&fit=crop&q=60" alt="Samsung Galaxy S23" />
+        <h3>Samsung Galaxy S23</h3>
+        <p class="price">KSh 159,850</p>
+        <p class="description">Flagship Android phone with advanced camera features.</p>
+        <button onclick="addToCart('Samsung Galaxy S23')">Add to Cart</button>
+      </article>
+
+      <article class="product" data-category="smartphones">
+        <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=500&auto=format&fit=crop&q=60" alt="Google Pixel 7 Pro" />
+        <h3>Google Pixel 7 Pro</h3>
+        <p class="price">KSh 149,850</p>
+        <p class="description">Pure Android experience with exceptional camera quality.</p>
+        <button onclick="addToCart('Google Pixel 7 Pro')">Add to Cart</button>
+      </article>
+
+      <article class="product" data-category="smartphones">
+        <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=500&auto=format&fit=crop&q=60" alt="OnePlus 11" />
+        <h3>OnePlus 11</h3>
+        <p class="price">KSh 129,850</p>
+        <p class="description">Fast performance with Hasselblad camera system.</p>
+        <button onclick="addToCart('OnePlus 11')">Add to Cart</button>
+      </article>
+
+      <!-- Laptops -->
+      <article class="product" data-category="laptops">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&auto=format&fit=crop&q=60" alt="MacBook Pro M2" />
+        <h3>MacBook Pro M2</h3>
+        <p class="price">KSh 289,850</p>
+        <p class="description">Powerful laptop with Apple M2 chip for professionals.</p>
+        <button onclick="addToCart('MacBook Pro M2')">Add to Cart</button>
+      </article>
+
+      <article class="product" data-category="laptops">
+        <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=500&auto=format&fit=crop&q=60" alt="Dell XPS 15" />
+        <h3>Dell XPS 15</h3>
+        <p class="price">KSh 249,850</p>
+        <p class="description">Premium Windows laptop with 4K OLED display.</p>
+        <button onclick="addToCart('Dell XPS 15')">Add to Cart</button>
+      </article>
+
+      <article class="product" data-category="laptops">
+        <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=500&auto=format&fit=crop&q=60" alt="Lenovo ThinkPad X1" />
+        <h3>Lenovo ThinkPad X1</h3>
+        <p class="price">KSh 219,850</p>
+        <p class="description">Business laptop with legendary ThinkPad reliability.</p>
+        <button onclick="addToCart('Lenovo ThinkPad X1')">Add to Cart</button>
+      </article>
+
+      <article class="product" data-category="laptops">
+        <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=500&auto=format&fit=crop&q=60" alt="HP Spectre x360" />
+        <h3>HP Spectre x360</h3>
+        <p class="price">KSh 199,850</p>
+        <p class="description">Convertible laptop with premium design and features.</p>
+        <button onclick="addToCart('HP Spectre x360')">Add to Cart</button>
+      </article>
+
+      <!-- Audio Devices -->
+      <article class="product" data-category="audio">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=60" alt="Sony WH-1000XM5" />
+        <h3>Sony WH-1000XM5</h3>
+        <p class="price">KSh 59,850</p>
+        <p class="description">Industry-leading noise cancelling headphones.</p>
+        <button onclick="addToCart('Sony WH-1000XM5')">Add to Cart</button>
+      </article>
+
+      <article class="product" data-category="audio">
+        <img src="https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=500&auto=format&fit=crop&q=60" alt="Apple AirPods Pro" />
+        <h3>Apple AirPods Pro</h3>
+        <p class="price">KSh 39,850</p>
+        <p class="description">Premium wireless earbuds with active noise cancellation.</p>
+        <button onclick="addToCart('Apple AirPods Pro')">Add to Cart</button>
+      </article>
+
+      <article class="product" data-category="audio">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=60" alt="Bose QuietComfort 45" />
+        <h3>Bose QuietComfort 45</h3>
+        <p class="price">KSh 49,850</p>
+        <p class="description">Comfortable noise-cancelling headphones with great sound.</p>
+        <button onclick="addToCart('Bose QuietComfort 45')">Add to Cart</button>
+      </article>
+
+      <article class="product" data-category="audio">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=60" alt="JBL Quantum 800" />
+        <h3>JBL Quantum 800</h3>
+        <p class="price">KSh 24,850</p>
+        <p class="description">Gaming headset with surround sound and RGB lighting.</p>
+        <button onclick="addToCart('JBL Quantum 800')">Add to Cart</button>
+      </article>
+
+      <!-- Tablets -->
+      <article class="product" data-category="tablets">
+        <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=500&auto=format&fit=crop&q=60" alt="iPad Pro 12.9" />
+        <h3>iPad Pro 12.9"</h3>
+        <p class="price">KSh 199,850</p>
+        <p class="description">Powerful tablet with M2 chip and mini-LED display.</p>
+        <button onclick="addToCart('iPad Pro 12.9')">Add to Cart</button>
+      </article>
+
+      <article class="product" data-category="tablets">
+        <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=500&auto=format&fit=crop&q=60" alt="Samsung Galaxy Tab S9" />
+        <h3>Samsung Galaxy Tab S9</h3>
+        <p class="price">KSh 159,850</p>
+        <p class="description">Premium Android tablet with S Pen support.</p>
+        <button onclick="addToCart('Samsung Galaxy Tab S9')">Add to Cart</button>
+      </article>
+
+      <!-- Smartwatches -->
+      <article class="product" data-category="smartwatches">
+        <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=500&auto=format&fit=crop&q=60" alt="Apple Watch Series 8" />
+        <h3>Apple Watch Series 8</h3>
+        <p class="price">KSh 79,850</p>
+        <p class="description">Advanced health monitoring and fitness tracking.</p>
+        <button onclick="addToCart('Apple Watch Series 8')">Add to Cart</button>
+      </article>
+
+      <article class="product" data-category="smartwatches">
+        <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=500&auto=format&fit=crop&q=60" alt="Samsung Galaxy Watch 5" />
+        <h3>Samsung Galaxy Watch 5</h3>
+        <p class="price">KSh 59,850</p>
+        <p class="description">Versatile smartwatch with comprehensive health features.</p>
+        <button onclick="addToCart('Samsung Galaxy Watch 5')">Add to Cart</button>
+      </article>
+
+      <!-- Gaming -->
+      <article class="product" data-category="gaming">
+        <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=500&auto=format&fit=crop&q=60" alt="PlayStation 5" />
+        <h3>PlayStation 5</h3>
+        <p class="price">KSh 89,850</p>
+        <p class="description">Next-gen gaming console with 4K graphics.</p>
+        <button onclick="addToCart('PlayStation 5')">Add to Cart</button>
+      </article>
+
+      <article class="product" data-category="gaming">
+        <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=500&auto=format&fit=crop&q=60" alt="Gaming PC RTX 4070" />
+        <h3>Gaming PC RTX 4070</h3>
+        <p class="price">KSh 299,850</p>
+        <p class="description">High-end gaming PC with latest RTX graphics.</p>
+        <button onclick="addToCart('Gaming PC RTX 4070')">Add to Cart</button>
+      </article>
+
+      <!-- Cameras -->
+      <article class="product" data-category="cameras">
+        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=500&auto=format&fit=crop&q=60" alt="Sony A7 IV" />
+        <h3>Sony A7 IV</h3>
+        <p class="price">KSh 399,850</p>
+        <p class="description">Professional mirrorless camera for photography.</p>
+        <button onclick="addToCart('Sony A7 IV')">Add to Cart</button>
+      </article>
+
+      <article class="product" data-category="cameras">
+        <img src="https://images.unsplash.com/photo-1527150602-a98f7a6f2746?w=500&auto=format&fit=crop&q=60" alt="DJI Air 3 Drone" />
+        <h3>DJI Air 3 Drone</h3>
+        <p class="price">KSh 199,850</p>
+        <p class="description">Advanced drone with 4K camera and obstacle avoidance.</p>
+        <button onclick="addToCart('DJI Air 3 Drone')">Add to Cart</button>
+      </article>
+
+      <!-- Smart Home -->
+      <article class="product" data-category="smarthome">
+        <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?w=500&auto=format&fit=crop&q=60" alt="Smart TV 65 OLED" />
+        <h3>Smart TV 65" OLED</h3>
+        <p class="price">KSh 249,850</p>
+        <p class="description">4K OLED TV with smart features and HDR.</p>
+        <button onclick="addToCart('Smart TV 65 OLED')">Add to Cart</button>
+      </article>
+
+      <article class="product" data-category="smarthome">
+        <img src="https://images.pexels.com/photos/4013157/pexels-photo-4013157.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Robot Vacuum" />
+        <h3>Robot Vacuum</h3>
+        <p class="price">KSh 89,850</p>
+        <p class="description">Smart robot vacuum with mapping and scheduling.</p>
+        <button onclick="addToCart('Robot Vacuum')">Add to Cart</button>
+      </article>
+
+      <!-- Accessories -->
+      <article class="product" data-category="accessories">
+        <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=500&auto=format&fit=crop&q=60" alt="Wireless Charger" />
+        <h3>Wireless Charger</h3>
+        <p class="price">KSh 9,850</p>
+        <p class="description">Fast wireless charging for all Qi-enabled devices.</p>
+        <button onclick="addToCart('Wireless Charger')">Add to Cart</button>
+      </article>
+
+      <article class="product" data-category="accessories">
+        <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=500&auto=format&fit=crop&q=60" alt="Mechanical Keyboard" />
+        <h3>Mechanical Keyboard</h3>
+        <p class="price">KSh 12,850</p>
+        <p class="description">RGB mechanical keyboard with premium switches.</p>
+        <button onclick="addToCart('Mechanical Keyboard')">Add to Cart</button>
+      </article>
+    </section>
+  </main>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-content">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button class="close-cart">&times;</button>
+      </div>
+      <div class="cart-items">
+        <!-- Cart items will be dynamically added here -->
+      </div>
+      <div class="cart-summary">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total-price">KSh 0</span>
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>TechZone</h3>
+        <p>Your trusted tech partner in Kenya</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <address>
+          <p>Email: info@techzone.co.ke</p>
+          <p>Phone: +254 700 000 000</p>
+          <p>Address: Nairobi, Kenya</p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 TechZone. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html> 

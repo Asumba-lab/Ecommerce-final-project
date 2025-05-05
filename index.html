@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TechZone - Your one-stop shop for all tech gadgets in Kenya" />
+  <title>TechZone - Your Gadget Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">TechZone</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button id="cartBtn">Cart 🛒 (<span id="cart-count">0</span>)</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h1>Welcome to TechZone</h1>
+      <p><strong>Your one-stop shop for all tech gadgets in Kenya!</strong></p>
+      <a href="products.html" class="cta-button"><strong>Shop Now</strong></a>
+    </section>
+
+    <section id="featured" class="featured-products">
+      <h2>Featured Products</h2>
+      <div class="product-list">
+        <article class="product">
+          <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500&auto=format&fit=crop&q=60" alt="Smartphone" />
+          <h3>Smartphone X1</h3>
+          <p>KSh 74,850</p>
+          <button onclick="addToCart('Smartphone X1')">Add to Cart</button>
+        </article>
+        <article class="product">
+          <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500&auto=format&fit=crop&q=60" alt="Laptop" />
+          <h3>Laptop Pro</h3>
+          <p>KSh 149,850</p>
+          <button onclick="addToCart('Laptop Pro')">Add to Cart</button>
+        </article>
+        <article class="product">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=60" alt="Headphones" />
+          <h3>Noise-Cancelling Headphones</h3>
+          <p>KSh 29,850</p>
+          <button onclick="addToCart('Headphones')">Add to Cart</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-image">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=60" alt="John M." />
+          </div>
+          <div class="testimonial-content">
+            <div class="rating">★★★★★</div>
+            <blockquote>
+              <p>"TechZone has the best selection of gadgets in Nairobi! Their customer service is exceptional, and the prices are very competitive. I bought my laptop here and couldn't be happier with the experience."</p>
+            </blockquote>
+            <div class="testimonial-author">
+              <cite>John Mwangi</cite>
+              <span class="author-title">Software Developer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-image">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=60" alt="Sarah K." />
+          </div>
+          <div class="testimonial-content">
+            <div class="rating">★★★★★</div>
+            <blockquote>
+              <p>"I love how they offer genuine products with warranty. The staff is knowledgeable and helped me choose the perfect smartphone. The after-sales support is outstanding!"</p>
+            </blockquote>
+            <div class="testimonial-author">
+              <cite>Sarah Kamau</cite>
+              <span class="author-title">Digital Content Creator</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-image">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&auto=format&fit=crop&q=60" alt="David O." />
+          </div>
+          <div class="testimonial-content">
+            <div class="rating">★★★★★</div>
+            <blockquote>
+              <p>"The delivery was super fast, and the product came in perfect condition. Their online shopping experience is seamless. Will definitely shop here again!"</p>
+            </blockquote>
+            <div class="testimonial-author">
+              <cite>David Omondi</cite>
+              <span class="author-title">Business Owner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter" class="newsletter">
+      <div class="newsletter-container">
+        <div class="newsletter-content">
+          <h2>Stay Updated</h2>
+          <p class="newsletter-subtitle">Join our community of tech enthusiasts</p>
+          <div class="newsletter-benefits">
+            <div class="benefit-item">
+              <span class="benefit-icon">🎁</span>
+              <span>Exclusive Deals</span>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon">📱</span>
+              <span>New Arrivals</span>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-icon">💡</span>
+              <span>Tech Tips</span>
+            </div>
+          </div>
+        </div>
+        <div class="newsletter-form-container">
+          <form id="newsletterForm" class="newsletter-form">
+            <div class="form-group">
+              <input type="email" placeholder="Enter your email address" required />
+              <button type="submit" class="subscribe-btn">
+                <span>Subscribe</span>
+                <span class="arrow">→</span>
+              </button>
+            </div>
+            <div class="form-footer">
+              <p><span style="color: gray; font-weight: bold;">By subscribing, you agree to our</span> <a href="#" style="color: gray; font-weight: bold;">Privacy Policy</a></p>
+              <div class="social-links">
+                <a href="#" class="social-link" aria-label="Facebook">
+                  <span class="social-icon">📘</span>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                  <span class="social-icon">🐦</span>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                  <span class="social-icon">📸</span>
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>TechZone</h3>
+        <p>Your trusted tech partner in Kenya</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <address>
+          <p>Email: info@techzone.co.ke</p>
+          <p>Phone: +254 700 000 000</p>
+          <p>Address: Nairobi, Kenya</p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 TechZone. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-content">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button class="close-cart">&times;</button>
+      </div>
+      <div class="cart-items">
+        <!-- Cart items will be dynamically added here -->
+      </div>
+      <div class="cart-summary">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total-price">KSh 0</span>
+        </div>
+        <button class="clear-cart-btn" onclick="clearCart()">Clear Cart</button>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
