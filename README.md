@@ -32,7 +32,6 @@ TechZone/
 ├── contact.html
 ├── style.css
 ├── script.js
-├── favicon.ico
 └── README.md
 ```
 
