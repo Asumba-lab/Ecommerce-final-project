@@ -66,7 +66,7 @@ You can deploy this website using any of these platforms:
 2. Push your code to the repository
 3. Go to Settings > Pages
 4. Select your main branch as the source
-5. Your site will be published at `https://yourusername.github.io/techzone`
+5. Your site will be published at `https://Asumba-lab.github.io/techzone`
 
 ### Netlify
 
