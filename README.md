@@ -12,13 +12,17 @@ A modern, responsive e-commerce website for a tech gadget store in Kenya. Built 
 - Interactive UI elements and animations
 - Google Maps integration
 - Modern design with smooth transitions
+- Dark/Light mode theme toggle
+- Animated team section
+- Enhanced navigation with hover effects
+- Mobile-first approach
 
 ## Technologies Used
 
 - HTML5
 - CSS3 (Custom properties, Flexbox, Grid)
 - JavaScript (ES6+)
-- Local Storage for cart management
+- Local Storage for cart management and theme preferences
 - Google Maps API
 - Unsplash for images
 
@@ -26,13 +30,14 @@ A modern, responsive e-commerce website for a tech gadget store in Kenya. Built 
 
 ```
 TechZone/
-├── index.html
-├── products.html
-├── about.html
-├── contact.html
-├── style.css
-├── script.js
-└── README.md
+├── index.html          # Home page
+├── products.html       # Product catalog
+├── about.html         # About page with team section
+├── contact.html       # Contact page with form and map
+├── style.css          # Main stylesheet
+├── script.js          # JavaScript functionality
+├── images/           # Image assets
+└── README.md         # Project documentation
 ```
 
 ## Setup and Installation
@@ -55,6 +60,26 @@ TechZone/
    # Using Node.js
    npx serve
    ```
+
+## Features in Detail
+
+### Theme Support
+- Automatic dark/light mode based on system preferences
+- Manual theme toggle with persistent preference
+- Smooth transitions between themes
+
+### Shopping Experience
+- Product filtering by category
+- Search functionality
+- Responsive product grid
+- Interactive cart management
+- Price display in Kenyan Shillings (KSh)
+
+### Contact & Support
+- Interactive contact form
+- Google Maps integration
+- Business hours display
+- Multiple contact channels
 
 ## Deployment
 
@@ -96,5 +121,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Contact
 
 - Email: info@techzone.co.ke
-- Phone: +254 700 000 000
-- Address: Westlands, Nairobi, Kenya 
+- Phone: +254 769 724 049
+- Address: Westlands, Nairobi, Kenya
+
+## Copyright
+
+© 2025 TechZone. All rights reserved.
