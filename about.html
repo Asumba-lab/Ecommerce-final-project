@@ -70,22 +70,12 @@
       </div>
 
       <div class="about-section">
-        <h2>Our Team</h2>
+        <h2>Team</h2>
         <div class="team-grid">
           <div class="team-member">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop&q=60" alt="Steve Ogolla" />
+            <img src="images/WhatsApp Image 2025-05-10 at 22.16.39_2dd55934.jpg" alt="Steve Ogolla" class="animated-ceo" />
             <h3>Steve Ogolla</h3>
             <p>Founder & CEO</p>
-          </div>
-          <div class="team-member">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&auto=format&fit=crop&q=60" alt="Sarah Kamau" />
-            <h3>Sarah Kamau</h3>
-            <p>Operations Manager</p>
-          </div>
-          <div class="team-member">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&auto=format&fit=crop&q=60" alt="David Omondi" />
-            <h3>David Omondi</h3>
-            <p>Technical Director</p>
           </div>
         </div>
       </div>
@@ -133,17 +123,38 @@
         <h3>Contact Us</h3>
         <address>
           <p>Email: info@techzone.co.ke</p>
-          <p>Phone: +254 700 000 000</p>
+          <p>Phone: +254 769 724 049</p>
           <p>Address: Nairobi, Kenya</p>
         </address>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2024 TechZone. All rights reserved.</p>
+      <p>&copy; 2025 TechZone. All rights reserved.</p>
     </div>
   </footer>
 
+  <button class="theme-toggle" id="themeToggle">🌓</button>
+
   <script src="script.js"></script>
+  <script>
+    // Theme Toggle Functionality
+    const themeToggle = document.getElementById('themeToggle');
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    // Check for saved theme preference or use system preference
+    const currentTheme = localStorage.getItem('theme') || 
+      (prefersDarkScheme.matches ? 'dark' : 'light');
+    
+    // Apply the theme
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    
+    // Toggle theme function
+    themeToggle.addEventListener('click', () => {
+      const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+  </script>
 </body>
 
 </html> 
