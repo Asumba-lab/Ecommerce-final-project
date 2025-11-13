@@ -108,8 +108,7 @@ You can deploy this website using any of these platforms:
 4. Deploy
 
    ## Live Page
-   click this link to access the page
-   'ecommerce-final-project-lac.vercel.app'
+   click this link to access the page: ecommerce-final-project-lac.vercel.app
 
 ## Contributing
 
