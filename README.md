@@ -107,6 +107,10 @@ You can deploy this website using any of these platforms:
 3. Configure project settings
 4. Deploy
 
+   ## Live Page
+   click this link to access the page
+   'ecommerce-final-project-lac.vercel.app'
+
 ## Contributing
 
 1. Fork the repository
